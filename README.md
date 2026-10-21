@@ -54,7 +54,8 @@ Para volver a desplegar:
 -descargar los archivos y colocar la carpeta en la carpeta htdocs de xampp
 -iniciar xampp
 -ingresar a phpMyAdmin e importar el archivo "notasDataBase.sql" para cargar las bases de datos
--acceder a la dirección "https://localhost/AppNotas/frontend/index.html"
+-acceder a la dirección "https://localhost/index.html" (originalmente la ruta era "https://localhost/AppNotas/frontend/index.html" pero
+tuvimos que alterar la estructura para que github leyera el index a la hora de cargar el url con github pages)
 
 o accediendo desde la URL: https://yuuglitch.github.io/TP1_Grupo17/
 
