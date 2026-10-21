@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App de Notas</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+    <h2>Registrarse</h2>
+
+    <form id="formRegistro">
+        <label for="correo_r">Email:</label>
+        <input type="email" id="correo_r" name="email" autocomplete="email" required>
+        
+        <br><br>
+
+        <label for="contrasenia_r">Contraseña:</label>
+        <input type="password" id="contrasenia_r" name="contrasenia" minlength="8" required>
+
+        <br><br>
+        
+        <label for="confirmar_contrasenia_r">Confirmar contraseña:</label>
+        <input type="password" id="confirmar_contrasenia_r" name="contrasenia_c" required>
+
+        <br><br>
+        
+        <label for="pokemon">Pokemon Favorito(opcional)</label>
+        <input type="text" id="pokemon" name="pocket_monster">
+
+        <br><br>
+
+        <button type="submit">Crear usuario</button>
+    </form>
+
+    <p id="mensaje"></p>
+    <br><br>
+    
+    <h2>Iniciar sesion</h2>
+
+    <form id="formIngreso">
+        <label for="correo">Email:</label>
+        <input type="email" id="correo" name="email" autocomplete="email" required>
+    
+        <br><br>
+
+        <label for="contrasenia">Contraseña:</label>
+        <input type="password" id="contrasenia" name="contrasenia" required>
+        
+        <br><br>
+
+        <button type="submit">Iniciar sesion</button>
+    </form>
+
+    <br><br>
+    
+    <h2>Agregar nota</h2>
+
+    <form id="formNotas">
+        <fieldset id="campos2" disabled>
+            <label for="titulo">Titulo:</label>
+            <input type="text" id="titulo" name="titulo" maxlength="150" required>
+            
+            <label for="contenido">Nota:</label>
+            <input type="text" id="contenido" name="texto" required>
+            
+            <br><br>
+
+            <button type="submit">Guardar Nota</button>
+        </fieldset>
+    </form>
+
+    <p id="mensaje"></p>
+
+    <table border="3">
+        <thead><tr><th>ID</th><th>Notas</th><th>Acciones</th></tr></thead>
+        <tbody id="Tabla"></tbody>
+    </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
